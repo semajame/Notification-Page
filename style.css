@@ -1,0 +1,200 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+font-family: 'Plus Jakarta Sans', sans-serif;
+
+- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+- Weights: 500, 800 */
+
+
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue2: hsl(207, 47%, 96%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --font-size: 1rem;
+    --font-size2: 1.2rem;
+    --font-size3: 1.4rem;
+    --font-size4: 2rem;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F9FAFE;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    margin-top: 1rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+/* HEADER */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.notif-three{
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 1rem;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+.mark-all{
+    cursor: pointer;
+    color: var(--grayish-blue);
+}
+
+.mark-all:hover, .first-tourna:hover, .acc-name:hover, .chess-club{
+    color: var(--blue);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+}
+
+.account-notif, .kim, .nathan, .anna, .rizky{
+    margin: 1rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grayish-blue2);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 700px;
+    cursor: pointer;
+}
+
+.anna, .kim, .nathan, .rizky{
+    background-color: white;
+}
+
+.account-notif.active{
+    background-color: white;
+}
+
+.account-notif img, .kim img, .nathan img, .anna img, .rizky img{
+    width: 50px;
+    margin-right: 2rem;
+}
+
+.notif{
+    margin: 0;
+    color: var(--dark-grayish-blue);
+}
+
+.minute{
+    margin: 0;
+    color: var(--grayish-blue);
+}
+
+.acc-name{
+    font-weight: 700;
+    color: black;
+    padding-right: 0.3rem;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.dot.dotactive{
+    display: none;
+}
+
+.first-tourna, .chess-club{
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    padding-left: 0.3rem;
+}
+
+.chess-club{
+    color: var(--blue);
+}
+
+.kim-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kim{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.rizky-p{
+    border: 1px solid rgb(218, 214, 214);
+    padding: 1rem;
+    margin: 2rem 2rem 0 2rem;
+    color: var(--dark-grayish-blue);
+    text-align: justify;
+}
+
+.rizky-p:hover{
+    background-color: var(--light-grayish-blue2);
+}
+
+.rizky-container, .kim-container{
+    display: flex;
+    color: var(--dark-grayish-blue);
+}
+
+.rizky{
+    background-color: white;
+    display: block;
+}
+
+.rizky-block{
+    display: flex;
+}
